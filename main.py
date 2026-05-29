@@ -1,5 +1,9 @@
 number = int(input("Enter a number: "))
 
+count = 0
+
 while number > 0:
-    print(number)
-    number -= 1 
+    number = number // 10
+    count += 1
+
+print("Total digits are:", count)
